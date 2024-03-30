@@ -61,6 +61,12 @@ public class ArrayUtility<T> {
         //crete a new ArrayList to store value from array except valueToRemove
         List<T> newArr = new ArrayList<>();
 
-        return null;
+        for (int i=0; i<this.objectArray.length; i++){
+            if (!this.objectArray[i].equals(valueToRemove)){
+                newArr.add(this.objectArray[i]);
+            }
+        }
+
+        return newArr.toArray(Arrays.copyOf(this.objectArray, newArr.size()));
     }
 }
