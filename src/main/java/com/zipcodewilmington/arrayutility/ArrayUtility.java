@@ -58,6 +58,9 @@ public class ArrayUtility<T> {
     }
 
     public T[] removeValue(T valueToRemove) {
+        //crete a new ArrayList to store value from array except valueToRemove
+        List<T> newArr = new ArrayList<>();
+
         return null;
     }
 }
